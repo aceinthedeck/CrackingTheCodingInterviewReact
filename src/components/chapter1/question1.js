@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Question from '../UI/question';
 
 class Question1 extends Component{
 
@@ -43,18 +44,46 @@ class Question1 extends Component{
 
     render(){
 
+        const code = String.raw`
+            isUnique = (text) => {
+
+            let charSet = Array(128).fill(false);
+            if(text.length>128){
+                return false;
+            }
+    
+            for(const char of text){
+                let charCode = char.charCodeAt(0);
+                if(charSet[charCode]===true){
+                    return false;
+                }
+                else{
+                    charSet[charCode] = true;
+                }
+            }
+            return true;
+            }`;
+
         return(
             <div>
-                <h3>Chapter 1</h3>
-                <h4>Implement an algorithm to determine if a string has all unique characters. 
-                    What if you cannot use additional data structures?
-                </h4>
-                <p>Type a string to test</p>
-                <input type="text" onChange={this.onTextChange}></input>
+                <Question chapter="Chapter 1"
+                question="Implement an algorithm to determine if a string has all unique characters. 
+                What if you cannot use additional data structures?"/> 
+                <input type="text" 
+                placeholder="Type a string to test"
+                className="form-control"
+                 onChange={this.onTextChange}></input>
 
                 {
-                    this.state.message && <p>{this.state.message}</p>
+                    this.state.message && 
+                    <div className="alert alert-primary">
+                        {this.state.message}
+                    </div>
                 }
+                <h3>Code:</h3>
+                <div className="p-3 mb-2 bg-dark">
+                   <pre className="text-white">{code}</pre>
+                </div>
 
             </div>
         )

@@ -3,12 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Cracking the coding interview
 
 
-### Website http://localhost:3000](http://localhost:3000)
+### Demo [https://aceinthedeck.github.io/CrackingTheCodingInterviewReact/](https://aceinthedeck.github.io/CrackingTheCodingInterviewReact/)
 
 This project contains solutions to the problems in the great book<br>
-The code is written in javascript.
-
 ### Cracking the coding interview.
 
-
-Please submit a pull request if you want to submit any improvement
+The code is written in javascript. Please create a pull request if you want to submit any improvement
