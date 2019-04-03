@@ -5,7 +5,8 @@ const Question = (props) => {
     return(
         <div>
             <h3>{props.chapter}</h3>
-            <h4>{props.question}</h4>
+            <hr/>
+            <h5>{props.question}</h5>
         </div>
     );
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Question from '../UI/question';
+import Code from '../UI/code';
 
 class Question1 extends Component{
 
@@ -66,13 +67,14 @@ class Question1 extends Component{
 
         return(
             <div>
-                <Question chapter="Chapter 1"
+                <Question chapter="Chapter 1 - Is Unique"
                 question="Implement an algorithm to determine if a string has all unique characters. 
                 What if you cannot use additional data structures?"/> 
-                <input type="text" 
-                placeholder="Type a string to test"
+                <div class="form-group">
+                <input type="text" placeholder="Type a string to test"
                 className="form-control"
                  onChange={this.onTextChange}></input>
+                 </div>
 
                 {
                     this.state.message && 
@@ -80,10 +82,7 @@ class Question1 extends Component{
                         {this.state.message}
                     </div>
                 }
-                <h3>Code:</h3>
-                <div className="p-3 mb-2 bg-dark">
-                   <pre className="text-white">{code}</pre>
-                </div>
+                <Code code={code}/>
 
             </div>
         )

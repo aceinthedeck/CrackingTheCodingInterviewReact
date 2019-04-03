@@ -21,6 +21,32 @@ const SideBar = () => {
                             Check Permutation
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/urlify">
+                            URLify
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/palindromepermutation">
+                            Palrindrome Permutation
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/oneway">
+                            One Way
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/stringcompression">
+                            String Compression
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/rotatematrix">
+                            Rotate Matrix
+                        </Link>
+                    </li>
+
                 </ul>
         <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
           <span>Chapter 2</span>
