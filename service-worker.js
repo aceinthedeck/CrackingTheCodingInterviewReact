@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/CrackingTheCodingInterviewReact/precache-manifest.a1d50eec169836ccb6a08ffec8716b0d.js"
+  "/CrackingTheCodingInterviewReact/precache-manifest.54ab8fa221ce79b8107851fb41f0ed0c.js"
 );
 
 workbox.clientsClaim();
